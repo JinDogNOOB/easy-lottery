@@ -4,6 +4,7 @@ import TopBar from './components/TopBar'
 
 import Web3Provider from './contexts/Web3Provider';
 
+import Home from './views/Home';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <TopBar />
         <Switch>
           <Route path="/" exact>
-              
+              <Home />
           </Route>
           <Route path="/lottery" exact>
     

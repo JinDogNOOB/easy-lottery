@@ -1,7 +1,6 @@
 import React, {createContext, useEffect, useState} from 'react';
 import { parseConfigFileTextToJson } from 'typescript';
 import Web3 from 'web3';
-import {useWeb3Context} from 'web3-react'
 
 export interface Web3Context{
     web3?: Web3,

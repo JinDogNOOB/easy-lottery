@@ -2,9 +2,9 @@ import {useContext} from 'react';
 import {Context} from '../contexts/Web3Provider';
 
 
-const useWeb3Connector = () => {
+const useOnSetWeb3 = () => {
     const {onSetWeb3} = useContext(Context);
     return onSetWeb3;
 }
 
-export default useWeb3Connector;
+export default useOnSetWeb3;

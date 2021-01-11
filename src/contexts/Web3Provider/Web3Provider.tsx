@@ -21,10 +21,8 @@ const Web3Provider: React.FC = ({children}) => {
         if(window.ethereum){
             // @ts-ignore: Unreachable code error
             const temp3: Web3 = new Web3(window.ethereum);
-            // @ts-ignore: Unreachable code error
-            window.ethereum.enable();
             setWeb3(temp3);
-            console.log("w.ethereum.enable()");
+            console.log("web3 is created");
         }else{
             console.log("w.ethereum does not exist");
         }

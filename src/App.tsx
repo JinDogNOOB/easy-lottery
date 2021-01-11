@@ -3,8 +3,11 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import TopBar from './components/TopBar'
 
 import Web3Provider from './contexts/Web3Provider';
+import MetamaskStatusProvider from './contexts/MetamaskStatusProvider';
+import WalletProvider from './contexts/WalletProvider';
 
 import Home from './views/Home';
+import Wallet from './views/Wallet';
 
 function App() {
   return (
@@ -19,7 +22,7 @@ function App() {
     
           </Route>
           <Route path="/wallet" exact>
-    
+              <Wallet />
           </Route>
           <Route path="/law" exact>
     
@@ -34,9 +37,16 @@ function App() {
 
 const Providers: React.FC = ({children}) => {
   return (
-    <Web3Provider>
+    
+    
+      <MetamaskStatusProvider>
+      <Web3Provider>
+      <WalletProvider>
       {children}
-    </Web3Provider>
+      </WalletProvider>
+      </Web3Provider>
+      </MetamaskStatusProvider>
+
   )
 }
 

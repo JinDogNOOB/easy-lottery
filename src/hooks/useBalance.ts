@@ -17,7 +17,7 @@ const useBalance = () => {
 });
     */
     useEffect(() => {
-        async() => {
+        async function fetchBalance(){
             try{
                 if(address == undefined) return;
                 let getBalanceResult = await web3?.eth.getBalance(address);
@@ -29,6 +29,7 @@ const useBalance = () => {
                 console.log(e);
             }  
         }  
+        fetchBalance();
     }, [web3?.currentProvider]);
     
     return amount;

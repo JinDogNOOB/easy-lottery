@@ -11,7 +11,7 @@ const useAccount = () => {
     
 
     useEffect(() => {
-        async() => {
+        async function fetchAccount(){
             try{
                 let getAccountResult = await web3?.eth.getAccounts();
                 if(getAccountResult != undefined){
@@ -24,6 +24,7 @@ const useAccount = () => {
 
             console.log("test" + (await web3?.eth.getAccounts()));
         }
+        fetchAccount();
         
         
     }, [web3?.currentProvider]);

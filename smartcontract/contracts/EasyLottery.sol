@@ -4,7 +4,7 @@ pragma solidity >=0.4.22 <0.9.0;
 
 
 
-contract wobLottery{
+contract EasyLottery{
     address payable OWNER;
     // 로또 회차(블록넘버)
     uint256 public GAME_NUMBER;

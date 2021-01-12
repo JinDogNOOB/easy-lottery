@@ -23,7 +23,7 @@ const AccountInfo: React.FC = () => {
             </div>
 
            <div>
-               {balance?.valueOf}
+               {balance?.toString()}
            </div>
 
 

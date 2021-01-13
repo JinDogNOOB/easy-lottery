@@ -51,13 +51,16 @@ const WalletProvider: React.FC = ({children}) => {
         if (web3) {
             // @ts-ignore: Unreachable code error
             window.ethereum.on('accountsChanged', function (accounts) {
-                setAddress(accounts[0]);
+                setAddress(accounts[0]);      
                 console.log("account changed");
-            }); 
-            
+            });      
             fetchAccount();
         }
     }, [web3])
+
+    useEffect(()=>{
+        fetchBalance();
+    }, [address]);
 
 
 

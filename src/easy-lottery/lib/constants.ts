@@ -24,11 +24,11 @@ export const INTEGERS = {
 
 export const CONTRACT_ADDRS = {
     EASY_LOTTERY: {
-      1: 'undefined',
-      3: '0x~~~',
+      1: undefined,
+      3: '0x323d222C382eCaEc3A2e8D5fae5aEa1E386E60bC',
     },
     EASY_LOTTERY_TEST: {
-      1: 'undefined',
-      3: '0x~~~',
+      1: undefined,
+      3: '0x97fE6f0205daeeB29177b53E7aE931B4Cf4BA5D0',
     }
 }

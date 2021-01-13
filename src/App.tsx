@@ -8,6 +8,7 @@ import WalletProvider from './contexts/WalletProvider';
 
 import Home from './views/Home';
 import Wallet from './views/Wallet';
+import Law from './views/Law';
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
               <Wallet />
           </Route>
           <Route path="/law" exact>
-    
+              <Law />
           </Route>
 
         </Switch>

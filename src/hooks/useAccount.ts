@@ -8,7 +8,7 @@ import useWeb3 from './useWeb3';
 
 /**
  * @deprecated
- * use useWallet instead
+ * use useWallet.ts instead
  */
 const useAccount = () => {
 

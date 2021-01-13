@@ -9,6 +9,8 @@ import WalletProvider from './contexts/WalletProvider';
 import Home from './views/Home';
 import Wallet from './views/Wallet';
 import Law from './views/Law';
+import Lottery from './views/Lottery';
+
 
 function App() {
   return (
@@ -20,7 +22,7 @@ function App() {
               <Home />
           </Route>
           <Route path="/lottery" exact>
-    
+              <Lottery />
           </Route>
           <Route path="/wallet" exact>
               <Wallet />

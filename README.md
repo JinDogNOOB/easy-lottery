@@ -21,3 +21,6 @@
   - 스마트컨트랙트 수정 필요
   - Event 사용해야할 듯 -> 비용 등 구글링 후 적용
 
+## 연관 레포지토리
+* smartContract
+  - [easy-lottery-contract](https://github.com/JinDogNOOB/easy-lottery-contract)

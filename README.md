@@ -1,46 +1,23 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
+## 실행
 ### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Easy-Lottery가 제공하는 것
+* 누구도 쉽게 예측할수 없는 랜덤번호로 추첨
+  - 기존의 LotteryGame에서 나오는 불평, "공에 흙 채워넣은 것 아니냐?" 라는 소리가 나올 수 없음
+  - 랜덤번호는 추첨전 25 블록 전의 블록해쉬로 계산함
+  - LotteryGame응모는 추첨천 50블록 전부터는 할 수 없음
+* 관리자 없는 EasyLottery게임
+  - 누구나 추첨시간이 되면 추첨을 할 수 있음
+  - 이때 추첨을 지원한 사람은 가스fee등으로 손해를 봤기때문에 모인 금액의 0.29%을 가져감
+  - 기한이 지나거나 , 당첨자가 없으면 아주 적은 양은 없음, 많은 작업을 하지 않기 때문
+* 개발자에게 후원
+  - 개발자에게 아주아주아주 적은 금액이 들어감 0.01%
+  
+## 앞으로 개선해야할 것 
+* UI 
+  - 백엔드를 주로 만지다 보니 UI가 너무 허술해졌음 
+  - 현재 모인 금액의 그래프 등을 그리면 멋질 것 같음
+* 자신의 응모현황, 당첨결과 등을 볼 수 있어야함
+  - 스마트컨트랙트 수정 필요
+  - Event 사용해야할 듯 -> 비용 등 구글링 후 적용
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

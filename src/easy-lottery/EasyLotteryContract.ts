@@ -58,7 +58,7 @@ export default class EasyLotteryContract{
     /**
      * 개발비 수령
      */
-    async withdrawDevWei(address: string){
+    async withdrawDevWei(){
         let val:boolean = false;
         try{
             await this.easyLottery.methods.sendWeiToDev().send({from: this.address});

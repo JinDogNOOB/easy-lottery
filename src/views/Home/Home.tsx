@@ -16,10 +16,6 @@ const Home : React.FC = () => {
                 subtitle="easy lottery makes lottery more fair"
             />
 
-
-
-
-
         </Page>
     )
 }

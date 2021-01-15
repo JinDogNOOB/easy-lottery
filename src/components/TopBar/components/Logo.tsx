@@ -28,15 +28,16 @@ cursor: pointer;
 
 
 const Img = styled.img`
-width: 50px;
-height: 50px;
+width: 3rem;
+height: 3rem;
 `
 
 const Title = styled.div`
 font-size: 2rem;
 font-weight: bolder;
 text-align: center;
-vertical-align: middle
+vertical-align: middle;
+margin-left: 0.7rem;
 
 `
 

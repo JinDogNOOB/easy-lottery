@@ -4,6 +4,7 @@ import Page from '../../components/Page';
 import PageHeader from '../../components/PageHeader';
 
 import mainLogo from '../../assets/image/mainLogo.png';
+import PageContent from '../../components/PageContent';
 
 
 const Home : React.FC = () => {
@@ -16,11 +17,12 @@ const Home : React.FC = () => {
                 subtitle="easy lottery makes lottery more fair"
             />
 
-
-
-
-
+            <PageContent>
+                <p>easy lottery generate winning number with a past BlockHash of the Ethereum network</p>
+            </PageContent>
         </Page>
+
+
     )
 }
 

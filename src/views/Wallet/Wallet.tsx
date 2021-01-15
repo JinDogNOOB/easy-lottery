@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components'
 
 import Page from '../../components/Page';
 import PageHeader from '../../components/PageHeader';
@@ -21,21 +22,30 @@ const Wallet : React.FC = () => {
                 title="your Wallet"
                 subtitle="do what you want with your Metamask Wallet"
             />
+
             <PageContent>
-            <WalletSelector />
+            
             {web3?(
                 <AccountInfo />
             ):(
-                <p>connect with your Metamask wallet</p>
+                <Center>
+                    <p>connect with your Metamask wallet</p>
+                    <WalletSelector />
+                </Center>
             )}
                 
             </PageContent>
             
-            
-            
-
         </Page>
     )
 }
+
+const Center = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+`
+
+
 
 export default Wallet;

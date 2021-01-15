@@ -9,6 +9,7 @@ import mainLogo from '../../assets/image/mainLogo.png';
 import WalletSelector from '../../components/WalletSelector';
 import useWeb3 from '../../hooks/useWeb3';
 import AccountInfo from './components/AccountInfo';
+import PageContent from '../../components/PageContent';
 
 const Wallet : React.FC = () => {
     const web3 = useWeb3();
@@ -20,8 +21,18 @@ const Wallet : React.FC = () => {
                 title="your Wallet"
                 subtitle="do what you want with your Metamask Wallet"
             />
+            <PageContent>
             <WalletSelector />
-            <AccountInfo />
+            {web3?(
+                <AccountInfo />
+            ):(
+                <p>connect with your Metamask wallet</p>
+            )}
+                
+            </PageContent>
+            
+            
+            
 
         </Page>
     )

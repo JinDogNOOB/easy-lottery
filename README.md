@@ -23,3 +23,12 @@
 ## 연관 레포지토리
 * smartContract
   - [easy-lottery-contract](https://github.com/JinDogNOOB/easy-lottery-contract)
+
+# ScreenShot
+<div>
+ <img width="900" src="https://user-images.githubusercontent.com/49367014/104805767-c229aa00-5815-11eb-848b-1fc82a66ef2a.PNG">
+ <img width="900" src="https://user-images.githubusercontent.com/49367014/104805768-c2c24080-5815-11eb-9897-d94c941ec5cd.PNG">
+ <img width="900" src="https://user-images.githubusercontent.com/49367014/104805769-c3f36d80-5815-11eb-9136-0666ec4c7f20.PNG">
+ <img width="900" src="https://user-images.githubusercontent.com/49367014/104805771-c48c0400-5815-11eb-94af-21349d8a502a.PNG">
+ <img width="900" src="https://user-images.githubusercontent.com/49367014/104805773-c5249a80-5815-11eb-95b1-fbb50576ff63.PNG">
+</div>

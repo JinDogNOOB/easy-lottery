@@ -12,7 +12,12 @@
   - 기한이 지나거나 , 당첨자가 없으면 아주 적은 양은 없음, 많은 작업을 하지 않기 때문
 * 개발자에게 후원
   - 개발자에게 아주아주아주 적은 금액이 들어감 0.01%
-  
+## 기능 상세
+* 게임시작후 5일까지 ACTIVE 상태 -> 응모 가능(1회 0.0015ETH 다중응모 가능)
+* 5일 후 50블록 기다림 상태 -> 이후 추첨 가능
+* 추첨번호는 시작+5일+25블록 번호의 블록해쉬를 이용함
+* 당첨자 없거나 기한이 지나면 전액 이월 
+
 ## 앞으로 개선해야할 것 
 * UI 
   - 현재 모인 금액의 그래프 등을 그리면 멋질 것 같음
@@ -23,3 +28,12 @@
 ## 연관 레포지토리
 * smartContract
   - [easy-lottery-contract](https://github.com/JinDogNOOB/easy-lottery-contract)
+
+# ScreenShot
+<div>
+ <img width="900" src="https://user-images.githubusercontent.com/49367014/104805767-c229aa00-5815-11eb-848b-1fc82a66ef2a.PNG">
+ <img width="900" src="https://user-images.githubusercontent.com/49367014/104805768-c2c24080-5815-11eb-9897-d94c941ec5cd.PNG">
+ <img width="900" src="https://user-images.githubusercontent.com/49367014/104805769-c3f36d80-5815-11eb-9136-0666ec4c7f20.PNG">
+ <img width="900" src="https://user-images.githubusercontent.com/49367014/104805771-c48c0400-5815-11eb-94af-21349d8a502a.PNG">
+ <img width="900" src="https://user-images.githubusercontent.com/49367014/104805773-c5249a80-5815-11eb-95b1-fbb50576ff63.PNG">
+</div>

@@ -10,6 +10,7 @@ import Home from './views/Home';
 import Wallet from './views/Wallet';
 import Law from './views/Law';
 import Lottery from './views/Lottery';
+import Test from './views/Test';
 
 
 function App() {
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path="/law" exact>
               <Law />
+          </Route>
+          <Route path="/test" exact>
+              <Test />
           </Route>
 
         </Switch>

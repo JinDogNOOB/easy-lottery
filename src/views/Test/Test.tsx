@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import CommonModal from "../../components/CommonModal";
 import LoginModalForm from "./components/LoginModalForm";
+import NewLoginModal from "./components/NewLoginModal";
 import SignupModalForm from "./components/SignupModalForm";
 
 const Test:React.FC = () =>{
@@ -22,6 +23,12 @@ const Test:React.FC = () =>{
         <h1>hello</h1>
         <button onClick={()=>{loginModalToggle();}}>로그인</button>
         <button onClick={()=>{signupModalToggle();}}>회원가입</button>
+
+        <NewLoginModal
+            isOpen={isLoginModalOpen}
+            toggle={loginModalToggle}
+        />
+
 
         <CommonModal
         isOpen={isLoginModalOpen}
